@@ -1,0 +1,33 @@
+Task 1 :
+Parent PID: 3012
+Child 1: PID=3013, Parent=3012, Message=Hello from child process 1!
+Child 2: PID=3014, Parent=3012, Message=Hello from child process 2!
+Parent: Child 3013 finished (status=0)
+Parent: Child 3014 finished (status=0)
+
+
+Task 2 :
+ Child 1 executing command: ls -l
+Child 2 executing command: date
+Child 3 executing command: ps aux
+
+
+Task 3:
+ [Zombie Child] PID=3120 exiting immediately...
+[Parent] Created zombie child PID=3120, sleeping 5 seconds...
+(Use: ps -el | grep defunct)
+[Parent] Reaped zombie child 3120
+[Orphan Child] PID=3123 started. Parent=3122
+[Parent] Exiting before child 3123 finishes (to orphan it).
+
+Task 4 : 
+Name:   python3
+State:  R (running)
+VmRSS:  26120 kB
+Executable Path: /usr/bin/python3.11
+Open File Descriptors: ['0', '1', '2']
+
+Task 5 : 
+Child 1 PID=3201 nice=0 duration=2.312s
+Child 2 PID=3202 nice=5 duration=2.604s
+Child 3 PID=3203 nice=10 duration=2.951s
